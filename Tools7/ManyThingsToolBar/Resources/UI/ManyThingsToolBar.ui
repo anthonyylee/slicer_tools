@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ManyThingsToolBar</class>
+ <widget class="qMRMLWidget" name="ManyThingsToolBar">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>289</width>
+    <height>317</height>
+   </rect>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <widget class="QLabel" name="infoModuleLabel">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="toolTip">
+      <string/>
+     </property>
+     <property name="text">
+      <string>This module creates a custom toolbar where all interaction takes place.</string>
+     </property>
+     <property name="scaledContents">
+      <bool>false</bool>
+     </property>
+     <property name="wordWrap">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QCheckBox" name="loadToolBarCheckBox">
+     <property name="text">
+      <string>Show the toolbar</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QGroupBox" name="scopeGroupBox">
+     <property name="title">
+      <string/>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout_2">
+      <item>
+       <widget class="QCheckBox" name="cropCheckBox">
+        <property name="text">
+         <string>Crop volume functions</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QCheckBox" name="resliceCheckBox">
+        <property name="text">
+         <string>Reslice functions</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QCheckBox" name="misToTubeCheckBox">
+        <property name="toolTip">
+         <string>This is legacy code. Consider the 'Edit centerline' module in the 'SlicerVMTK' extension instead.</string>
+        </property>
+        <property name="text">
+         <string>MIS to tube</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QCheckBox" name="undoRedoCheckBox">
+        <property name="text">
+         <string>Undo/Redo</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QCheckBox" name="removeHelmetCheckBox">
+        <property name="text">
+         <string>Remove helmet</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QCheckBox" name="anonymiseSceneCheckBox">
+        <property name="toolTip">
+         <string>Remove all patient name and birth date attributes from the subject hierarchy. This does not alter such attributes from the source DICOM files.</string>
+        </property>
+        <property name="text">
+         <string>Anonymise scene</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QCheckBox" name="virtualCathLabCheckBox">
+        <property name="toolTip">
+         <string>Helper tools for the VirtualCathLab module.</string>
+        </property>
+        <property name="text">
+         <string>VirtualCathLab helpers</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QCheckBox" name="planeCutSegmentCheckBox">
+        <property name="toolTip">
+         <string>Cut the current segment of the segment editor with a plane.</string>
+        </property>
+        <property name="text">
+         <string>Plane cut segment</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <spacer name="verticalSpacer">
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>20</width>
+       <height>40</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>qMRMLWidget</class>
+   <extends>QWidget</extends>
+   <header>qMRMLWidget.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

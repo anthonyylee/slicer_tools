@@ -1,5 +1,32 @@
+"""
+3D Slicer Script for Maximum Intensity Projection (MIP)
+
+Author: Anthony Y. Lee
+Created Date: 2026-02-23
+
+These are scripts used in 3D Slicer software Python console. It can be read into
+the 3D Slicer software using the `~/.slicerrc.py` file in the following manner.
+
+```
+exec(
+    open(
+        Path.home() 
+        / Path("Projects/slicer_tools/maximum_intensity_projection/logic.py")
+    ).read()
+)
+```
+
+"""
+## 3D Slicer built-in libraries - Can be installed via conda or pip when testing outside
 import numpy as np
+
+## 3D Slicer built-in libraries - Unable to install via conda or pip
 import SampleData
+
+## 3D Slicer auto-imported libraries
+# import slicer  # Added for clarity
+
+# TODO: Separate out the functionalities that are dependent on packages only available inside the 3D Slicer environment. So that the code can be tested without 3D Slicer.
 
 
 def demo_axes_orientation():

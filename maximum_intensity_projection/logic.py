@@ -41,7 +41,7 @@ def demo_axes_orientation():
     return
 
 
-def mip(volNode: "vtkMRMLScalarVolumeNode", axis:int="R") -> "vtkMRMLScalarVolumeNode": 
+def mip(volNode: "vtkMRMLScalarVolumeNode", axis:int="A") -> "vtkMRMLScalarVolumeNode": 
     """Maximum Intensity Projection (MIP) along R, A, or S axis.
     """
 

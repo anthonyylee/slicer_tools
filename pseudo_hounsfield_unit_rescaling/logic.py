@@ -2,7 +2,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 from collections import namedtuple
 
-Linear_Fit_Coef = namedtuple("Linear_Fit_Coef", ["intercept", "slope"])
+Linear_Fit_Coef = namedtuple("Linear_Fit_Coef", ["slope", "intercept"])
 
 def linear_fit_coef(air_mean_gv:float, water_mean_gv:float) -> Linear_Fit_Coef:
     """Calculate the intercept and slope given the air and water greyscale values
